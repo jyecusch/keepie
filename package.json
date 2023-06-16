@@ -1,0 +1,25 @@
+{
+  "name": "keepie",
+  "version": "0.0.1",
+  "description": "Keepie is an internet connection uptime tracker, for monitoring basic home internet stability.",
+  "main": "index.js",
+  "repository": "https://github.com/jyecusch/keepie",
+  "author": "jye",
+  "license": "MIT",
+  "dependencies": {
+    "@prisma/client": "4.15.0",
+    "dotenv": "^16.1.4",
+    "typescript": "^5.1.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.3.1",
+    "prisma": "^4.15.0",
+    "ts-node": "^10.9.1"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node ./build/index.js",
+    "dev": "ts-node ./src/index.ts",
+    "db:migrate": "npx prisma migrate dev"
+  }
+}
